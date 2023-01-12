@@ -1,0 +1,198 @@
+.Windows-modolus__is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.Windows-modolus__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: visibility, opacity;
+}
+.Windows-modolus__modulus {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1.25);
+  background-color: #fff;
+  width: 528px;
+  height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+}
+.Windows-modolus__close-btn,
+.x {
+  width: 30px;
+  height: 30px;
+}
+
+.Windows-modolus__close-btn {
+  position: absolute;
+  background-color: #fff;
+  cursor: pointer;
+  top: 8px;
+  right: 8px;
+  border: 1px solid rgba(197, 58, 58, 0.1);
+  border-radius: 50%;
+}
+.Windows-modolus__modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.Windows-modolus__modal-form label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--color2);
+  padding-left: 40px;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+
+.Windows-modolus__modal-form textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 1.16;
+}
+
+.Windows-modolus__modal-form input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+  height: 40px;
+  padding-left: 42px;
+}
+
+.Windows-modolus__modal-form textarea {
+  height: 120px;
+  width: 448px;
+  padding: 12px 16px;
+}
+
+.Windows-modolus__modal-form input,
+.Windows-modolus__modal-form textarea {
+  color: var(--color2);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.Windows-modolus__modal-form button {
+  width: 200px;
+  height: 50px;
+  background: var(--color4);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #fff;
+  margin: auto;
+  margin-top: 30px;
+  border: none;
+}
+
+.Windows-modolus__modal-form button:hover {
+  cursor: pointer;
+}
+
+.Windows-modolus__modal-form label:focus-within svg {
+  fill: var(--color4);
+}
+.Windows-modolus__modal-form > h3 {
+  text-align: center;
+  color: var(--color2);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.Windows-modolus__modal-form textarea {
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.Windows-modolus__modal-form input:hover,
+.Windows-modolus__modal-form textarea:hover {
+  border: 1px solid var(--color4);
+}
+.Windows-modolus__icon--form {
+  width: 12px;
+  height: 12px;
+  fill: #000;
+}
+
+.Windows-modolus__icon-form--avatar {
+  width: 12px;
+  height: 12px;
+  top: 130px;
+  position: relative;
+  transform: translateY(-101px);
+  right: 10px;
+}
+
+.Windows-modolus__icon-form--phone {
+  height: 13px;
+  width: 13px;
+  top: 200px;
+  position: relative;
+  transform: translateY(-170px);
+  right: 28px;
+}
+
+.Windows-modolus__icon-form--envelope {
+  width: 15px;
+  height: 12px;
+  top: 268px;
+  position: relative;
+  transform: translateY(-240px);
+  right: 22px;
+}
+.Windows-modolus__checkbox-container a {
+  color: var(--color4);
+}
+
+.Windows-modolus__checkbox-label::before {
+  content: " ";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 20px;
+  margin-right: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 3px;
+}
+
+.Windows-modolus__web-checkbox:checked
+  + .Windows-modolus__checkbox-label::before {
+  background-color: var(--color4);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.Windows-modolus__web-checkbox {
+  align-self: center;
+  opacity: 0;
+  position: absolute;
+}
+.Windows-modolus__checkbox-lab {
+  text-decoration: underline;
+}
+
+textarea:focus-visible,
+input:focus-visible {
+  outline: none;
+  border: 1px solid var(--color4);
+}

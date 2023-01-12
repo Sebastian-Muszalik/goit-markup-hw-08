@@ -1,0 +1,67 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "email": "",
+      "id": 2
+    },
+    {
+      "email": "",
+      "id": 3
+    },
+    {
+      "email": "",
+      "id": 4
+    },
+    {
+      "email": "",
+      "id": 5
+    },
+    {
+      "email": "",
+      "id": 6
+    },
+    {
+      "email": "",
+      "id": 7
+    },
+    {
+      "email": "",
+      "id": 8
+    },
+    {
+      "email": "",
+      "id": 9
+    },
+    {
+      "email": "",
+      "id": 10
+    },
+    {
+      "email": "",
+      "id": 11
+    },
+    {
+      "name": "adsas",
+      "phone": "233213",
+      "email": "sadsa@op.pl",
+      "comment": "asdasd",
+      "consent": "consent",
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

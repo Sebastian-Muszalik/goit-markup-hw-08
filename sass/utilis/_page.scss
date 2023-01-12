@@ -1,0 +1,49 @@
+.PAGE {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--color2);
+  height: 600px;
+  width: 100%;
+}
+.PAGE__button {
+  text-align: center;
+  padding: 200px 0;
+}
+.PAGE__picture-H1 {
+  max-width: 1600px;
+  padding: 200px 0;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/H1-IMAGE.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.PAGE__button-BTN {
+  background: #2196f3;
+  border: 0px;
+  border-radius: 4px;
+}
+.PAGE__button-front {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  transition-property: transform, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0.2, 1);
+}
+.PAGE__button-front:hover {
+  color: #212121;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #212121;
+  cursor: pointer;
+}

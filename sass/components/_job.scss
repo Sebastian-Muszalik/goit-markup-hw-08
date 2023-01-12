@@ -1,0 +1,49 @@
+.job {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+}
+.job__title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.2em;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.job__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-left: -30px;
+}
+.job__list-item {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+.job__foto-container {
+  position: relative;
+}
+.job__list-image {
+  min-width: 370px;
+  display: block;
+}
+.job__foto-item {
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  top: 76%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+}

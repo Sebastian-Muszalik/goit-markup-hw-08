@@ -1,0 +1,81 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-astronauta {
+  width: 32px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icon-zegar {
+  width: 32px;
+  height: 32px;
+  background-position: -48px 0;
+}
+.icon-Komputer {
+  width: 32px;
+  height: 32px;
+  background-position: -96px 0;
+}
+.icon-koperta {
+  width: 43px;
+  height: 32px;
+  background-position: -144px 0;
+}
+.icon-Facebook {
+  width: 32px;
+  height: 32px;
+  background-position: -240px 0;
+}
+.icon-antena {
+  width: 30px;
+  height: 32px;
+  background-position: -288px 0;
+}
+.icon-instagram {
+  width: 32px;
+  height: 32px;
+  background-position: -336px 0;
+}
+.icon-linkin {
+  width: 32px;
+  height: 32px;
+  background-position: -384px 0;
+}
+.icon-Logo-firmy-2 {
+  width: 56px;
+  height: 32px;
+  background-position: -432px 0;
+}
+.icon-Logo-firmy-3 {
+  width: 57px;
+  height: 32px;
+  background-position: -528px 0;
+}
+.icon-Logo-firmy-4 {
+  width: 57px;
+  height: 32px;
+  background-position: -624px 0;
+}
+.icon-logo-firmy-1 {
+  width: 56px;
+  height: 32px;
+  background-position: 0 -48px;
+}
+.icon-Logo-firmy-5 {
+  width: 67px;
+  height: 32px;
+  background-position: -96px -48px;
+}
+.icon-smartfon {
+  width: 20px;
+  height: 32px;
+  background-position: -192px -48px;
+}
+.icon-Tweeter {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -48px;
+}
+
