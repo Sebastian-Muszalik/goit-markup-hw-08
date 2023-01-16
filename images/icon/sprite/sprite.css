@@ -78,4 +78,8 @@
   height: 32px;
   background-position: -240px -48px;
 }
-
+.icon-menu {
+  width: 48px;
+  height: 32px;
+  background-position: 0 0;
+}

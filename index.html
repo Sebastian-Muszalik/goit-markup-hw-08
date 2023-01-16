@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><goit-markup-hw-07></title>
+    <title><goit-markup-hw-08></title>
     <link href="./css/main.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +25,7 @@
           <ul class="header__nav">
             <li class="header__list-item">
               <a href="#">
-                <b class="header__text-nav header__active"> Agencja</b>
+                <b class="header__text-nav header__active">  Agencja</b>
               </a>
             </li>
             <li class="header__list-item">
@@ -42,6 +42,19 @@
             </li>
           </ul>
         </nav>
+
+        <div class="container-mob">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="24" height="16" aria-label="mobile menu">
+              <use class="icon__menu" href="./images/icon.svg#icon-menu"></use>
+            </svg>
+
+          </button>
+        </div>
         <ul class="header__nav">
           <li class="header__nav-mobile header__titel-mobile">
             <a class="header__titel-mobile" href="malito:info@devstudio.com"></a>
@@ -161,18 +174,31 @@
           </ul>
         </div>
       </section>
-      <section class="Team">
-        <div class="Team__options">
+      <section class="Team ">
+        <div class="Team__options ">
           <h2 class="Team__Titel-head">Nasz zespół</h2>
           <ul class="Team__list">
             <li class="team__list-options ">
-              <img
-                class="team__imagen"
-                src="images/jons.jpg"
-                height="270"
-                width="260"
-                alt="programista1"
-              />
+              <picture>
+                <source
+                  srcset="./images/foto-product-designer/product-designer-mobile.webp 1x,./images/foto-product-designer/product-designer-mobile@2x.webp 2x"
+                  media="(max-width: 767px)" type="image/webp" />
+                <source
+                  srcset="./images/foto-product-designer/product-designer-mobile.jpg 1x,./images/foto-product-designer/product-designer-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" type="image/jpg">
+                <source srcset="./images/foto-product-designer/product-designer-tablet.webp 1x,
+                    ./images/foto-product-designer/product-designer-tablet@2x.webp 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)" type="image/webp" />
+                <source
+                  srcset="./images/foto-product-designer/product-designer-tablet.jpg 1x,./images/foto-product-designer/product-designer-tablet@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)" type="image/jpg">
+                <source srcset="./images/foto-product-designer/product-designer-laptop.webp 1x"
+                  media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="./images/foto-product-designer/product-designer-laptop.jpg 1x" media="(min-width: 1200px)"
+                  type="image/jpg">
+                <img class="section3-card__photo" src="./images/foto-product-designer/product-designer-tablet.jpg"
+                  alt="Nasz zespół" width="354" height="374" />
+              </picture>
               <h2 class="team__manager">John doe</h2>
               <p class="team__manager-item">Product designer</p>
               <ul class="team__icon-item-box ">
@@ -430,7 +456,17 @@
               </li>
             </ul>
           </section>
-          
+            <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="list__button-icon"
+          width="24"
+          height="16"
+          aria-label="переключатель мобільного меню"
+        >
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
         <div class="footer__Titel-newsletter">
           <p class="footer__modal-item ">Zapisz się do newslettera</p>
           <div class="footer__form">
@@ -515,7 +551,7 @@
       </form>
       </div>
     </div>
-
+    <script defer src="js/mobile-menu.js"></script>
     <script src="modal.js"></script>
   </body>
 </html>
