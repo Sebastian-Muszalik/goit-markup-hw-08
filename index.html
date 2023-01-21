@@ -23,7 +23,7 @@
 
         <nav>
           <ul class="header__nav">
-            <li class="header__list-item">
+            <li class="header__list-item item">
               <a href="#">
                 <b class="header__text-nav header__active">  Agencja</b>
               </a>
@@ -42,7 +42,7 @@
             </li>
           </ul>
         </nav>
-
+<!-- burger start -->
         <div class="container-mob">
           <button
             class="menu-toggle js-open-menu"
@@ -52,19 +52,19 @@
             <svg width="24" height="16" aria-label="mobile menu">
               <use class="icon__menu" href="./images/icon.svg#icon-menu"></use>
             </svg>
-
           </button>
         </div>
+          <!-- burger end -->
         <ul class="header__nav">
-          <li class="header__nav-mobile header__titel-mobile">
+          <li class="header__nav-mobile header__titel-mobile item ">
             <a class="header__titel-mobile" href="malito:info@devstudio.com"></a>
               <svg class="header__item-evelope">
                 <use href="./images/icon.svg#icon-koperta"></use></svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="header__nav-mobile">
-            <a class="header__titel-mobile" href="TEL:+48 111-111-111"
+          <li class="header__nav-mobile item">
+            <a class="header__titel-mobile item " href="TEL:+48 111-111-111"
               >  <svg class="header__item-smartphone">
                 <use href="./images/icon.svg#icon-smartfon"></use>
               </svg>+48 111 111 111
@@ -72,13 +72,17 @@
           </li>
         </ul>
       </div>
+
     </header>
     <main>
       <section class="PAGE PAGE__button PAGE__picture-H1">
+        <div class="container">
         <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button class="PAGE__button-BTN PAGE__button-front" type="button" data-modal-open >
           zamów usługe </button>
-      </section>
+        </div>
+        </section>
+
       <section class="items">
         <ul class="items__main ">
           <li class="items__item ">
@@ -131,7 +135,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="section">
         <div class="job">
           <h3 class="job__title">Czym się zajmujemy</h3>
           <ul class="job__list">
@@ -551,6 +555,65 @@
       </form>
       </div>
     </div>
+
+
+   <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-item__item">Agencja</a>
+          </li>
+          <li class="nav-item">
+            <a href="./portfolio.html" class="nav-item__item-blue">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-item__item">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="number-info">
+        <li class="list-number">
+          <a href="tel:+38 096 111 11 11" class="list-number-number">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="list-number">
+          <a href="info@devstudio.com" class="list-number-mail">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="mob-soc">
+        <li class="mob-soc__item">
+          <a href="" class="mob-soc__item-link">Instagram</a>
+        </li>
+        <li class="mob-soc__item">
+          <a href="" class="mob-soc__item-link">Twitter</a>
+        </li>
+        <li class="mob-soc__item">
+          <a href="" class="mob-soc__item-link">Facebook</a>
+        </li>
+        <li class="mob-soc__item">
+          <a href="" class="mob-soc__item-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <!--  -->
     <script defer src="js/mobile-menu.js"></script>
     <script src="modal.js"></script>
   </body>
