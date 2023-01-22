@@ -15,11 +15,8 @@
 window.onresize = function () {
   const menuBtnRef = document.querySelector("[data-menu-button]");
   const mobileMenuRef = document.querySelector("[data-menu]");
-  if (
-    document.documentElement.clientWidth > 767 &&
-    menuBtnRef.classList.contains("is-open")
-  ) {
+  if (document.documentElement.clientWidth > 767 && menuBtnRef.classList.contains('is-open')) {
     mobileMenuRef.classList.toggle("is-open");
     menuBtnRef.classList.toggle("is-open");
   }
-};
+}
