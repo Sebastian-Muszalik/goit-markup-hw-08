@@ -1,10 +1,3 @@
-.PAGE {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: var(--color2);
-  height: 600px;
-  width: 100%;
-}
 .PAGE__button {
   text-align: center;
   padding: 200px 0;
@@ -151,6 +144,52 @@
 
   background-repeat: no-repeat;
 }
+.main-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $tablets-min) {
+    padding-top: 118px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    width: 100%;
+  }
+  @media screen and (min-width: $tablets) {
+    padding-top: 118px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    width: 360px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    width: 696px;
+  }
+}
+
+.main-description .main-title {
+  color: var(--whiteColor);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 900;
+
+  @media screen and (max-width: $tablets-min) {
+    line-height: 1.6;
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $tablets) {
+    line-height: 1.6;
+    font-size: 26px;
+  }
+  @media screen and (min-width: $desktop) {
+    line-height: 1.36;
+    font-size: 44px;
+  }
+}
+
 .PAGE__button-BTN {
   background: #2196f3;
   border: 0px;
