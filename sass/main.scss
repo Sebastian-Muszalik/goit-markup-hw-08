@@ -1,14 +1,22 @@
-@import "./base/container";
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
 @import "./base/common";
-@import "./utilis/variables";
-@import "./utilis/page";
-@import "./components/header";
-@import "./components/items";
-@import "./components/job";
-@import "./components/team";
-@import "./components/clients";
-@import "./components/footer";
-@import "./utilis/modules";
-@import "./components/portfollion-btn";
-@import "./components/portfollio-tiles";
-@import "./utilis/portfollio";
+@import "./base/container";
+
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/portfolio";
+@import "./layout/section1";
+@import "./layout/section2";
+@import "./layout/section3";
+@import "./layout/section4";
+
+@import "./components/form";
+@import "./components/logo";
+@import "./components/menu-mobile";
+@import "./components/modal";
+@import "./components/portfolio-btn";
+@import "./components/social-media";
+
